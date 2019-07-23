@@ -12,6 +12,7 @@
 		FBE8A7B322E302DE00CD6625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE8A7B122E302DE00CD6625 /* Main.storyboard */; };
 		FBE8A7B522E302DF00CD6625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE8A7B422E302DF00CD6625 /* Assets.xcassets */; };
 		FBE8A7B822E302DF00CD6625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE8A7B622E302DF00CD6625 /* LaunchScreen.storyboard */; };
+		FBE8A7C022E576AD00CD6625 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE8A7BF22E576AD00CD6625 /* DelegateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FBE8A7B422E302DF00CD6625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBE8A7B722E302DF00CD6625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBE8A7B922E302DF00CD6625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE8A7BF22E576AD00CD6625 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				FBE8A7AD22E302DE00CD6625 /* AppDelegate.swift */,
 				FBE8A7AF22E302DE00CD6625 /* ViewController.swift */,
 				FBE8A7B122E302DE00CD6625 /* Main.storyboard */,
+				FBE8A7BF22E576AD00CD6625 /* DelegateViewController.swift */,
 				FBE8A7B422E302DF00CD6625 /* Assets.xcassets */,
 				FBE8A7B622E302DF00CD6625 /* LaunchScreen.storyboard */,
 				FBE8A7B922E302DF00CD6625 /* Info.plist */,
@@ -137,6 +140,7 @@
 			files = (
 				FBE8A7B022E302DE00CD6625 /* ViewController.swift in Sources */,
 				FBE8A7AE22E302DE00CD6625 /* AppDelegate.swift in Sources */,
+				FBE8A7C022E576AD00CD6625 /* DelegateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
