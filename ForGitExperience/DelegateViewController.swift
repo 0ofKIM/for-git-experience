@@ -9,9 +9,6 @@
 import UIKit
 
 class DelegateViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
-    
-    
-                                                                     
 
     var Array = ["red","green","blue"]
     
@@ -19,11 +16,16 @@ class DelegateViewController: UIViewController, UITextFieldDelegate, UIPickerVie
     @IBOutlet var textField: UITextField!
     @IBOutlet var picker: UIPickerView!
     
-    //delegate를 씀으로써 필요 없어짐
-//    @IBAction func buttonClicked(_ sender: Any) {
-//        enteredLabel.text = textField.text
-//    }
-    
+//    delegate를 씀으로써 필요 없어짐
+    @IBAction func buttonClicked(_ sender: Any) {
+        let alert = UIAlertController(title: "alert", message: "button 말고 return key를 누르세요 ~", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .destructive, handler: nil)
+
+        alert.addAction(ok)
+        present(alert, animated: false, completion: nil)
+    }
+
+    //엔터로 전송(delegate)
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         enteredLabel.text = textField.text
         
@@ -42,6 +44,7 @@ class DelegateViewController: UIViewController, UITextFieldDelegate, UIPickerVie
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return Array[row]
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,15 +54,4 @@ class DelegateViewController: UIViewController, UITextFieldDelegate, UIPickerVie
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
