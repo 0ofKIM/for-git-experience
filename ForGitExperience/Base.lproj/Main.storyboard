@@ -50,6 +50,14 @@
                                     <segue destination="LqS-cZ-H45" kind="presentation" id="KuU-mE-7cV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NW-PV-Wsi">
+                                <rect key="frame" x="165" y="349" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pan Gesture"/>
+                                <connections>
+                                    <segue destination="e14-fp-xXR" kind="presentation" id="0yQ-eY-sB3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -58,6 +66,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3846" y="187"/>
+        </scene>
+        <!--Pan Gesture View Controller-->
+        <scene sceneID="9Nq-iV-rn8">
+            <objects>
+                <viewController id="e14-fp-xXR" customClass="PanGestureViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zAd-Iz-XfD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="Tpa-Nf-5j7">
+                                <rect key="frame" x="87" y="232" width="240" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5zp-9u-Kre" appends="YES" id="rQn-Xk-54C"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Uay-mQ-fD6"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Tpa-Nf-5j7" id="pdA-qB-Odb"/>
+                        <outlet property="panGestureRecognizer" destination="5zp-9u-Kre" id="IqV-1Y-xgc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNy-YC-6V4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="5zp-9u-Kre">
+                    <connections>
+                        <action selector="panAction:" destination="e14-fp-xXR" id="aRY-3Z-pJt"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="711.59420289855075" y="1570.9821428571429"/>
         </scene>
         <!--Scroll View Controller-->
         <scene sceneID="3sK-Zz-6m3">
