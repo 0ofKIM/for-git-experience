@@ -26,6 +26,7 @@ class DelegateDataReceiveViewController: UIViewController {
             viewController.delegate = self
         }
     }
+
 }
 
 //convention에 맞게 extension으로 빼줌
