@@ -32,6 +32,7 @@ class PanGestureViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("branch content change test")
     }
 
 }
