@@ -23,9 +23,9 @@ class PanGestureViewController: UIViewController {
 
         let velocity = panGestureRecognizer.velocity(in: imageView)
 
-        if abs(velocity.x) > abs(velocity.y) { //좌우 판단
+        if abs(velocity.x) > abs(velocity.y) {//좌우 판단
             velocity.x < 0 ? print("왼쪽\(velocity.x)") : print("오른쪽\(velocity.x)")
-        } else if abs(velocity.y) > abs(velocity.x) { //상하 판단
+        } else if abs(velocity.y) > abs(velocity.x) {//상하 판단
             velocity.y < 0 ? print("위쪽\(velocity.y)") : print("아래쪽\(velocity.y)")
         }
     }
