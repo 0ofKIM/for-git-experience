@@ -16,8 +16,8 @@ class CollectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.delegate = self  //storyboard에서 직접 연결
-        collectionView.dataSource = self//storybaord에서 직접 연결
+//        collectionView.delegate = self  //storyboard에서 직접 연결
+//        collectionView.dataSource = self//storybaord에서 직접 연결
         initRefresh()
     }
 
@@ -54,12 +54,10 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // get a reference to our storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! TestCollectionViewCell
 
-        // Use the outlet in our custom class to get a reference to the UILabel in the cell
         cell.myLabel.text = self.items[indexPath.item]
-        cell.backgroundColor = UIColor.cyan // make cell more visible in our example project
+        cell.backgroundColor = UIColor.cyan
 
         return cell
     }

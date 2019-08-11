@@ -51,7 +51,6 @@ class DelegateViewController: UIViewController, UITextFieldDelegate, UIPickerVie
         textField.delegate = self
         picker.delegate = self
         picker.dataSource = self
-        // Do any additional setup after loading the view.
     }
     
 }
