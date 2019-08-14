@@ -74,6 +74,14 @@
                                     <segue destination="KhC-fd-Ekr" kind="presentation" id="6bP-XG-On7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mha-se-rwK">
+                                <rect key="frame" x="181" y="557" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tap Bar"/>
+                                <connections>
+                                    <segue destination="ByR-BN-o4h" kind="presentation" id="wD3-oP-zsD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -82,6 +90,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3846" y="187"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="2MO-cC-HBO">
+            <objects>
+                <viewController id="P0A-3I-lhA" customClass="TapBarViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4b5-GJ-36J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cqW-iG-naM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zbC-kt-uRH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBE-bU-qFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2746" y="3888"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="7BN-FG-Dyj">
+            <objects>
+                <viewController id="dre-dR-oBl" customClass="SecondTapBarViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OQe-AY-Ixz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cRt-ay-Dry"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Z3U-nf-gN2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hH9-Ik-vaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1642" y="3888"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="5vy-nZ-h69">
+            <objects>
+                <viewController id="dIv-rm-d9U" customClass="ThirdTapBarViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MBZ-dX-8ix">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GRO-qc-fQn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="p0O-cF-a9A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecZ-bP-nI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-616" y="3888"/>
         </scene>
         <!--Coding Layout View Controller-->
         <scene sceneID="Q8M-Xe-6aN">
@@ -415,6 +471,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GXe-tP-If1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="711.59420289855075" y="3171.4285714285711"/>
+        </scene>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="Rff-FY-wP7">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ByR-BN-o4h" customClass="MainTabBarViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wfi-Oi-M6T">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="P0A-3I-lhA" kind="relationship" relationship="viewControllers" id="g7O-Lw-Rho"/>
+                        <segue destination="dre-dR-oBl" kind="relationship" relationship="viewControllers" id="J7g-Kf-xmv"/>
+                        <segue destination="dIv-rm-d9U" kind="relationship" relationship="viewControllers" id="3ls-ZF-Cgj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaZ-UD-mZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1642" y="3171"/>
         </scene>
     </scenes>
     <resources>
