@@ -30,6 +30,7 @@
 		FB63433B23068CC900FDC09D /* more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB63433823068CC900FDC09D /* more@2x.png */; };
 		FB63433C23068CC900FDC09D /* swift_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB63433923068CC900FDC09D /* swift_logo@3x.png */; };
 		FB63433D23068CC900FDC09D /* arrow-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB63433A23068CC900FDC09D /* arrow-back@2x.png */; };
+		FB63433F2306B10700FDC09D /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63433E2306B10700FDC09D /* AlertViewController.swift */; };
 		FB8EFF0A2302BC9600DCD101 /* CodingLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EFF092302BC9600DCD101 /* CodingLayoutViewController.swift */; };
 		FB8EFF0C2302BCB400DCD101 /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EFF0B2302BCB400DCD101 /* ReadViewController.swift */; };
 		FB967B4E22E849B200609729 /* DelegateDataSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB967B4D22E849B200609729 /* DelegateDataSendViewController.swift */; };
@@ -69,6 +70,7 @@
 		FB63433823068CC900FDC09D /* more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@2x.png"; sourceTree = "<group>"; };
 		FB63433923068CC900FDC09D /* swift_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swift_logo@3x.png"; sourceTree = "<group>"; };
 		FB63433A23068CC900FDC09D /* arrow-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-back@2x.png"; sourceTree = "<group>"; };
+		FB63433E2306B10700FDC09D /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		FB8EFF092302BC9600DCD101 /* CodingLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingLayoutViewController.swift; sourceTree = "<group>"; };
 		FB8EFF0B2302BCB400DCD101 /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		FB967B4D22E849B200609729 /* DelegateDataSendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateDataSendViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				FB23B61922F6E3D30002D946 /* CollectionViewController.swift */,
 				FB23B61B22F6E5B30002D946 /* TestCollectionViewCell.swift */,
 				FB634334230641DA00FDC09D /* CodingLayout */,
+				FB63433E2306B10700FDC09D /* AlertViewController.swift */,
 				FBE8A7B122E302DE00CD6625 /* Main.storyboard */,
 				FBE8A7B422E302DF00CD6625 /* Assets.xcassets */,
 				FBE8A7B622E302DF00CD6625 /* LaunchScreen.storyboard */,
@@ -297,6 +300,7 @@
 				FB55ED2D2304145B00D4E9B6 /* MainTabBarViewController.swift in Sources */,
 				FBBBCF3622F14E600035EF74 /* ScrollViewController.swift in Sources */,
 				FBE8A7AE22E302DE00CD6625 /* AppDelegate.swift in Sources */,
+				FB63433F2306B10700FDC09D /* AlertViewController.swift in Sources */,
 				FBCC720422E7075F0038AA54 /* DelegateDataReceiveViewController.swift in Sources */,
 				FBF8F34A22F2B69400B50121 /* PanGestureViewController.swift in Sources */,
 				FB8EFF0C2302BCB400DCD101 /* ReadViewController.swift in Sources */,
