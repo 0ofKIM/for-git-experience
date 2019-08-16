@@ -13,24 +13,21 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //*
-        // 1. 루트 뷰 컨트롤러를 UITabBarController로 캐스팅한다.
-//        let tbC = MainTabBarViewController()
-        // 2. 탭 바로부터 탭 바 아이템 배열을 가져온다.
+        // 1. 탭 바로부터 탭 바 아이템 배열을 가져온다.
         if let tbItems = self.tabBar.items {
-            // 3. 탭 바 아이템에 커스텀 이미지를 등록한다.
+            // 2. 탭 바 아이템에 커스텀 이미지를 등록한다.
             tbItems[0].image = UIImage(named: "calendar.png")
             tbItems[1].image = UIImage(named: "file-tree.png")
             tbItems[2].image = UIImage(named: "photo.png")
 
-            // 4. 탭 바 아이템에 타이틀을 설정한다.
+            // 3. 탭 바 아이템에 타이틀을 설정한다.
             tbItems[0].title = "calendar"
             tbItems[1].title = "file"
             tbItems[2].title = "photo"
         }
-        // 5. 활성화된 탭 바 아이템의 이미지 색상을 변경한다.
+        // 4. 활성화된 탭 바 아이템의 이미지 색상을 변경한다.
         self.tabBar.tintColor = .white
-        // 6. 탭 바에 배경 이미지를 설정한다.
+        // 5. 탭 바에 배경 이미지를 설정한다.
         self.tabBar.backgroundImage = UIImage(named: "menubar-bg-mini.png")
     }
 

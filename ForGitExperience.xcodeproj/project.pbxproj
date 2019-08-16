@@ -109,6 +109,36 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		FB6343322306414200FDC09D /* TapBarController */ = {
+			isa = PBXGroup;
+			children = (
+				FB55ED2C2304145B00D4E9B6 /* MainTabBarViewController.swift */,
+				FB55ED092303F5AA00D4E9B6 /* TapBarViewController.swift */,
+				FB55ED0B2303F8E400D4E9B6 /* SecondTapBarViewController.swift */,
+				FB55ED0D2303F8EE00D4E9B6 /* ThirdTapBarViewController.swift */,
+			);
+			path = TapBarController;
+			sourceTree = "<group>";
+		};
+		FB6343332306418000FDC09D /* DelegateData */ = {
+			isa = PBXGroup;
+			children = (
+				FBCC720322E7075F0038AA54 /* DelegateDataReceiveViewController.swift */,
+				FB967B4D22E849B200609729 /* DelegateDataSendViewController.swift */,
+			);
+			path = DelegateData;
+			sourceTree = "<group>";
+		};
+		FB634334230641DA00FDC09D /* CodingLayout */ = {
+			isa = PBXGroup;
+			children = (
+				FB8EFF092302BC9600DCD101 /* CodingLayoutViewController.swift */,
+				FB8EFF0B2302BCB400DCD101 /* ReadViewController.swift */,
+				FB6343322306414200FDC09D /* TapBarController */,
+			);
+			path = CodingLayout;
+			sourceTree = "<group>";
+		};
 		FBE8A7A122E302DE00CD6625 = {
 			isa = PBXGroup;
 			children = (
@@ -132,20 +162,14 @@
 				FBE8A7AD22E302DE00CD6625 /* AppDelegate.swift */,
 				FBE8A7AF22E302DE00CD6625 /* ViewController.swift */,
 				FBE8A7BF22E576AD00CD6625 /* DelegateViewController.swift */,
-				FBCC720322E7075F0038AA54 /* DelegateDataReceiveViewController.swift */,
-				FB967B4D22E849B200609729 /* DelegateDataSendViewController.swift */,
+				FB6343332306418000FDC09D /* DelegateData */,
 				FB967B4F22E8559700609729 /* ExtensionViewController.swift */,
 				FBBBCF3522F14E600035EF74 /* ScrollViewController.swift */,
 				FBF8F34922F2B69400B50121 /* PanGestureViewController.swift */,
 				FB23B61922F6E3D30002D946 /* CollectionViewController.swift */,
-				FB8EFF092302BC9600DCD101 /* CodingLayoutViewController.swift */,
-				FB8EFF0B2302BCB400DCD101 /* ReadViewController.swift */,
-				FB55ED2C2304145B00D4E9B6 /* MainTabBarViewController.swift */,
-				FB55ED092303F5AA00D4E9B6 /* TapBarViewController.swift */,
-				FB55ED0B2303F8E400D4E9B6 /* SecondTapBarViewController.swift */,
-				FB55ED0D2303F8EE00D4E9B6 /* ThirdTapBarViewController.swift */,
-				FBE8A7B122E302DE00CD6625 /* Main.storyboard */,
 				FB23B61B22F6E5B30002D946 /* TestCollectionViewCell.swift */,
+				FB634334230641DA00FDC09D /* CodingLayout */,
+				FBE8A7B122E302DE00CD6625 /* Main.storyboard */,
 				FBE8A7B422E302DF00CD6625 /* Assets.xcassets */,
 				FBE8A7B622E302DF00CD6625 /* LaunchScreen.storyboard */,
 				FBE8A7B922E302DF00CD6625 /* Info.plist */,
