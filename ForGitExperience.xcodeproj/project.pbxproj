@@ -135,8 +135,16 @@
 				FB8EFF092302BC9600DCD101 /* CodingLayoutViewController.swift */,
 				FB8EFF0B2302BCB400DCD101 /* ReadViewController.swift */,
 				FB6343322306414200FDC09D /* TapBarController */,
+				FB6343352306809400FDC09D /* NavigationBarController */,
 			);
 			path = CodingLayout;
+			sourceTree = "<group>";
+		};
+		FB6343352306809400FDC09D /* NavigationBarController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationBarController;
 			sourceTree = "<group>";
 		};
 		FBE8A7A122E302DE00CD6625 = {
