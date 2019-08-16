@@ -26,6 +26,10 @@
 		FB55ED28230402C100D4E9B6 /* rss@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB55ED1B230402C100D4E9B6 /* rss@2x.png */; };
 		FB55ED29230402C100D4E9B6 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB55ED1C230402C100D4E9B6 /* twitter@2x.png */; };
 		FB55ED2D2304145B00D4E9B6 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55ED2C2304145B00D4E9B6 /* MainTabBarViewController.swift */; };
+		FB6343372306821D00FDC09D /* NavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6343362306821D00FDC09D /* NavigationBarViewController.swift */; };
+		FB63433B23068CC900FDC09D /* more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB63433823068CC900FDC09D /* more@2x.png */; };
+		FB63433C23068CC900FDC09D /* swift_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB63433923068CC900FDC09D /* swift_logo@3x.png */; };
+		FB63433D23068CC900FDC09D /* arrow-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB63433A23068CC900FDC09D /* arrow-back@2x.png */; };
 		FB8EFF0A2302BC9600DCD101 /* CodingLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EFF092302BC9600DCD101 /* CodingLayoutViewController.swift */; };
 		FB8EFF0C2302BCB400DCD101 /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EFF0B2302BCB400DCD101 /* ReadViewController.swift */; };
 		FB967B4E22E849B200609729 /* DelegateDataSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB967B4D22E849B200609729 /* DelegateDataSendViewController.swift */; };
@@ -61,6 +65,10 @@
 		FB55ED1B230402C100D4E9B6 /* rss@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rss@2x.png"; sourceTree = "<group>"; };
 		FB55ED1C230402C100D4E9B6 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
 		FB55ED2C2304145B00D4E9B6 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		FB6343362306821D00FDC09D /* NavigationBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarViewController.swift; sourceTree = "<group>"; };
+		FB63433823068CC900FDC09D /* more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@2x.png"; sourceTree = "<group>"; };
+		FB63433923068CC900FDC09D /* swift_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swift_logo@3x.png"; sourceTree = "<group>"; };
+		FB63433A23068CC900FDC09D /* arrow-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-back@2x.png"; sourceTree = "<group>"; };
 		FB8EFF092302BC9600DCD101 /* CodingLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingLayoutViewController.swift; sourceTree = "<group>"; };
 		FB8EFF0B2302BCB400DCD101 /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		FB967B4D22E849B200609729 /* DelegateDataSendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateDataSendViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +100,9 @@
 		FB55ED0F2304014700D4E9B6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FB63433A23068CC900FDC09D /* arrow-back@2x.png */,
+				FB63433823068CC900FDC09D /* more@2x.png */,
+				FB63433923068CC900FDC09D /* swift_logo@3x.png */,
 				FB55ED18230402C000D4E9B6 /* calendar.png */,
 				FB55ED15230402C000D4E9B6 /* checkmark@2x.png */,
 				FB55ED11230402C000D4E9B6 /* connectivity-bar.png */,
@@ -143,6 +154,7 @@
 		FB6343352306809400FDC09D /* NavigationBarController */ = {
 			isa = PBXGroup;
 			children = (
+				FB6343362306821D00FDC09D /* NavigationBarViewController.swift */,
 			);
 			path = NavigationBarController;
 			sourceTree = "<group>";
@@ -243,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB63433C23068CC900FDC09D /* swift_logo@3x.png in Resources */,
 				FB55ED27230402C100D4E9B6 /* photo.png in Resources */,
 				FB55ED1F230402C100D4E9B6 /* designbump@2x.png in Resources */,
 				FB55ED25230402C100D4E9B6 /* calendar.png in Resources */,
@@ -251,12 +264,14 @@
 				FB55ED28230402C100D4E9B6 /* rss@2x.png in Resources */,
 				FBE8A7B822E302DF00CD6625 /* LaunchScreen.storyboard in Resources */,
 				FB55ED26230402C100D4E9B6 /* homes_119.png in Resources */,
+				FB63433B23068CC900FDC09D /* more@2x.png in Resources */,
 				FB55ED1D230402C100D4E9B6 /* menubar-bg.png in Resources */,
 				FBE8A7B522E302DF00CD6625 /* Assets.xcassets in Resources */,
 				FB55ED20230402C100D4E9B6 /* google@2x.png in Resources */,
 				FB55ED1E230402C100D4E9B6 /* connectivity-bar.png in Resources */,
 				FB55ED21230402C100D4E9B6 /* facebook@2x.png in Resources */,
 				FB55ED24230402C100D4E9B6 /* menubar-bg-mini.png in Resources */,
+				FB63433D23068CC900FDC09D /* arrow-back@2x.png in Resources */,
 				FB55ED29230402C100D4E9B6 /* twitter@2x.png in Resources */,
 				FBE8A7B322E302DE00CD6625 /* Main.storyboard in Resources */,
 			);
@@ -275,6 +290,7 @@
 				FB23B61A22F6E3D30002D946 /* CollectionViewController.swift in Sources */,
 				FB8EFF0A2302BC9600DCD101 /* CodingLayoutViewController.swift in Sources */,
 				FB55ED0C2303F8E400D4E9B6 /* SecondTapBarViewController.swift in Sources */,
+				FB6343372306821D00FDC09D /* NavigationBarViewController.swift in Sources */,
 				FBE8A7B022E302DE00CD6625 /* ViewController.swift in Sources */,
 				FB967B4E22E849B200609729 /* DelegateDataSendViewController.swift in Sources */,
 				FB967B5022E8559700609729 /* ExtensionViewController.swift in Sources */,

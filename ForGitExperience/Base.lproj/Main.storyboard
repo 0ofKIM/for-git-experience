@@ -82,6 +82,14 @@
                                     <segue destination="ByR-BN-o4h" kind="presentation" id="wD3-oP-zsD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpZ-Qq-xjd">
+                                <rect key="frame" x="157" y="620" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Navigation Bar"/>
+                                <connections>
+                                    <segue destination="4kA-KI-i8n" kind="presentation" id="Kvj-VO-a97"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -90,6 +98,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3846" y="187"/>
+        </scene>
+        <!--Navigation Bar View Controller-->
+        <scene sceneID="dFN-aC-bdr">
+            <objects>
+                <viewController id="XMp-gM-TEo" customClass="NavigationBarViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YSl-cZ-HAV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zI7-hf-0BT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fMX-Sr-pAj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8jo-nF-rPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3414" y="1716"/>
         </scene>
         <!--Item-->
         <scene sceneID="2MO-cC-HBO">
@@ -194,7 +218,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="711.59420289855075" y="1570.9821428571429"/>
+            <point key="canvasLocation" x="1621.7391304347827" y="1570.9821428571429"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="LGn-C4-nxF">
@@ -295,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mip-Mx-4li" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="712" y="844"/>
+            <point key="canvasLocation" x="1621.7391304347827" y="843.75"/>
         </scene>
         <!--Extension View Controller-->
         <scene sceneID="xdg-1n-8SP">
@@ -478,6 +502,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ByR-BN-o4h" customClass="MainTabBarViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wfi-Oi-M6T">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -490,6 +515,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaZ-UD-mZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1642" y="3171"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZLA-T2-YrR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4kA-KI-i8n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gII-2a-oHx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XMp-gM-TEo" kind="relationship" relationship="rootViewController" id="8aK-dv-6Vj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zAp-Dn-GhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4478" y="1716"/>
         </scene>
     </scenes>
     <resources>
