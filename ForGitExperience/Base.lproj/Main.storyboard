@@ -91,11 +91,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7G-xv-5ZH">
-                                <rect key="frame" x="191" y="676" width="33" height="30"/>
+                                <rect key="frame" x="53" y="676" width="33" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Alert"/>
                                 <connections>
                                     <segue destination="5ad-ry-HQW" kind="presentation" id="siC-1x-hAS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e3-a2-H6e">
+                                <rect key="frame" x="121" y="676" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Map Alert"/>
+                                <connections>
+                                    <segue destination="yUU-KC-Boh" kind="presentation" id="jUi-Vk-3bN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -542,6 +550,21 @@
             </objects>
             <point key="canvasLocation" x="712" y="3976"/>
         </scene>
+        <!--Map Alert View Controller-->
+        <scene sceneID="kTN-bd-L9b">
+            <objects>
+                <viewController id="yUU-KC-Boh" customClass="MapAlertViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N9a-yF-TvH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5Zi-2v-Bqc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TIW-at-WCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3781" y="1681"/>
+        </scene>
         <!--Alert View Controller-->
         <scene sceneID="4ej-YP-mdx">
             <objects>
@@ -555,7 +578,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNd-kQ-yJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3846" y="1681"/>
+            <point key="canvasLocation" x="-4480" y="1681"/>
         </scene>
     </scenes>
     <resources>
