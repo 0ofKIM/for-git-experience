@@ -46,6 +46,10 @@
 		FBF8F34A22F2B69400B50121 /* PanGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8F34922F2B69400B50121 /* PanGestureViewController.swift */; };
 		FBFC4AD2230A351B0052D5D8 /* MapAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4AD1230A351B0052D5D8 /* MapAlertViewController.swift */; };
 		FBFC4AD5230A3B040052D5D8 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4AD4230A3B040052D5D8 /* MapKitViewController.swift */; };
+		FBFC4AD8230AA2B90052D5D8 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFC4AD6230AA2B90052D5D8 /* note.png */; };
+		FBFC4AD9230AA2B90052D5D8 /* rating5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFC4AD7230AA2B90052D5D8 /* rating5@2x.png */; };
+		FBFC4ADB230AA33A0052D5D8 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4ADA230AA33A0052D5D8 /* ImageViewController.swift */; };
+		FBFC4ADD230AA74C0052D5D8 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4ADC230AA74C0052D5D8 /* ControlViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +94,10 @@
 		FBF8F34922F2B69400B50121 /* PanGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureViewController.swift; sourceTree = "<group>"; };
 		FBFC4AD1230A351B0052D5D8 /* MapAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAlertViewController.swift; sourceTree = "<group>"; };
 		FBFC4AD4230A3B040052D5D8 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		FBFC4AD6230AA2B90052D5D8 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		FBFC4AD7230AA2B90052D5D8 /* rating5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rating5@2x.png"; sourceTree = "<group>"; };
+		FBFC4ADA230AA33A0052D5D8 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		FBFC4ADC230AA74C0052D5D8 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,8 @@
 		FB55ED0F2304014700D4E9B6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FBFC4AD6230AA2B90052D5D8 /* note.png */,
+				FBFC4AD7230AA2B90052D5D8 /* rating5@2x.png */,
 				FB63433A23068CC900FDC09D /* arrow-back@2x.png */,
 				FB63433823068CC900FDC09D /* more@2x.png */,
 				FB63433923068CC900FDC09D /* swift_logo@3x.png */,
@@ -210,6 +220,8 @@
 				FB63433E2306B10700FDC09D /* AlertViewController.swift */,
 				FBFC4AD1230A351B0052D5D8 /* MapAlertViewController.swift */,
 				FBFC4AD4230A3B040052D5D8 /* MapKitViewController.swift */,
+				FBFC4ADA230AA33A0052D5D8 /* ImageViewController.swift */,
+				FBFC4ADC230AA74C0052D5D8 /* ControlViewController.swift */,
 			);
 			path = AlertController;
 			sourceTree = "<group>";
@@ -273,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB63433C23068CC900FDC09D /* swift_logo@3x.png in Resources */,
+				FBFC4AD8230AA2B90052D5D8 /* note.png in Resources */,
 				FB55ED27230402C100D4E9B6 /* photo.png in Resources */,
 				FB55ED1F230402C100D4E9B6 /* designbump@2x.png in Resources */,
 				FB55ED25230402C100D4E9B6 /* calendar.png in Resources */,
@@ -280,6 +293,7 @@
 				FB55ED22230402C100D4E9B6 /* checkmark@2x.png in Resources */,
 				FB55ED28230402C100D4E9B6 /* rss@2x.png in Resources */,
 				FBE8A7B822E302DF00CD6625 /* LaunchScreen.storyboard in Resources */,
+				FBFC4AD9230AA2B90052D5D8 /* rating5@2x.png in Resources */,
 				FB55ED26230402C100D4E9B6 /* homes_119.png in Resources */,
 				FB63433B23068CC900FDC09D /* more@2x.png in Resources */,
 				FB55ED1D230402C100D4E9B6 /* menubar-bg.png in Resources */,
@@ -311,7 +325,9 @@
 				FB6343372306821D00FDC09D /* NavigationBarViewController.swift in Sources */,
 				FBE8A7B022E302DE00CD6625 /* ViewController.swift in Sources */,
 				FB967B4E22E849B200609729 /* DelegateDataSendViewController.swift in Sources */,
+				FBFC4ADB230AA33A0052D5D8 /* ImageViewController.swift in Sources */,
 				FB967B5022E8559700609729 /* ExtensionViewController.swift in Sources */,
+				FBFC4ADD230AA74C0052D5D8 /* ControlViewController.swift in Sources */,
 				FB55ED2D2304145B00D4E9B6 /* MainTabBarViewController.swift in Sources */,
 				FBBBCF3622F14E600035EF74 /* ScrollViewController.swift in Sources */,
 				FBE8A7AE22E302DE00CD6625 /* AppDelegate.swift in Sources */,
