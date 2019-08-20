@@ -51,6 +51,8 @@
 		FBFC4ADB230AA33A0052D5D8 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4ADA230AA33A0052D5D8 /* ImageViewController.swift */; };
 		FBFC4ADD230AA74C0052D5D8 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4ADC230AA74C0052D5D8 /* ControlViewController.swift */; };
 		FBFC4ADF230B8D0B0052D5D8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4ADE230B8D0B0052D5D8 /* ListViewController.swift */; };
+		FBFC4AE1230BBC9A0052D5D8 /* CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4AE0230BBC9A0052D5D8 /* CSButton.swift */; };
+		FBFC4AE3230BBCFE0052D5D8 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4AE2230BBCFE0052D5D8 /* CustomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +102,8 @@
 		FBFC4ADA230AA33A0052D5D8 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		FBFC4ADC230AA74C0052D5D8 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 		FBFC4ADE230B8D0B0052D5D8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		FBFC4AE0230BBC9A0052D5D8 /* CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSButton.swift; sourceTree = "<group>"; };
+		FBFC4AE2230BBCFE0052D5D8 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,7 @@
 				FB6343322306414200FDC09D /* TapBarController */,
 				FB6343352306809400FDC09D /* NavigationBarController */,
 				FBFC4AD3230A35240052D5D8 /* AlertController */,
+				FBFC4AE4230BBD0B0052D5D8 /* Custom */,
 			);
 			path = CodingLayout;
 			sourceTree = "<group>";
@@ -227,6 +232,15 @@
 				FBFC4ADE230B8D0B0052D5D8 /* ListViewController.swift */,
 			);
 			path = AlertController;
+			sourceTree = "<group>";
+		};
+		FBFC4AE4230BBD0B0052D5D8 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				FBFC4AE2230BBCFE0052D5D8 /* CustomViewController.swift */,
+				FBFC4AE0230BBC9A0052D5D8 /* CSButton.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,8 +351,10 @@
 				FBE8A7AE22E302DE00CD6625 /* AppDelegate.swift in Sources */,
 				FB63433F2306B10700FDC09D /* AlertViewController.swift in Sources */,
 				FBFC4AD2230A351B0052D5D8 /* MapAlertViewController.swift in Sources */,
+				FBFC4AE1230BBC9A0052D5D8 /* CSButton.swift in Sources */,
 				FBCC720422E7075F0038AA54 /* DelegateDataReceiveViewController.swift in Sources */,
 				FBF8F34A22F2B69400B50121 /* PanGestureViewController.swift in Sources */,
+				FBFC4AE3230BBCFE0052D5D8 /* CustomViewController.swift in Sources */,
 				FB8EFF0C2302BCB400DCD101 /* ReadViewController.swift in Sources */,
 				FBE8A7C022E576AD00CD6625 /* DelegateViewController.swift in Sources */,
 			);
