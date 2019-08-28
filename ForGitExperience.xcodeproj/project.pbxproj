@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1695682316689700E0902D /* SelfTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1695672316689700E0902D /* SelfTestViewController.swift */; };
 		FB23B61A22F6E3D30002D946 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB23B61922F6E3D30002D946 /* CollectionViewController.swift */; };
 		FB23B61C22F6E5B30002D946 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB23B61B22F6E5B30002D946 /* TestCollectionViewCell.swift */; };
 		FB55ED0A2303F5AA00D4E9B6 /* TapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55ED092303F5AA00D4E9B6 /* TapBarViewController.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB1695672316689700E0902D /* SelfTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfTestViewController.swift; sourceTree = "<group>"; };
 		FB23B61922F6E3D30002D946 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FB23B61B22F6E5B30002D946 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
 		FB55ED092303F5AA00D4E9B6 /* TapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				FB8EFF092302BC9600DCD101 /* CodingLayoutViewController.swift */,
 				FB8EFF0B2302BCB400DCD101 /* ReadViewController.swift */,
+				FB1695672316689700E0902D /* SelfTestViewController.swift */,
 				FB6343322306414200FDC09D /* TapBarController */,
 				FB6343352306809400FDC09D /* NavigationBarController */,
 				FBFC4AD3230A35240052D5D8 /* AlertController */,
@@ -352,6 +355,7 @@
 				FB967B4E22E849B200609729 /* DelegateDataSendViewController.swift in Sources */,
 				FBFC4ADB230AA33A0052D5D8 /* ImageViewController.swift in Sources */,
 				FB967B5022E8559700609729 /* ExtensionViewController.swift in Sources */,
+				FB1695682316689700E0902D /* SelfTestViewController.swift in Sources */,
 				FBFC4ADD230AA74C0052D5D8 /* ControlViewController.swift in Sources */,
 				FB55ED2D2304145B00D4E9B6 /* MainTabBarViewController.swift in Sources */,
 				FBBBCF3622F14E600035EF74 /* ScrollViewController.swift in Sources */,
