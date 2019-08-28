@@ -117,6 +117,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB16956423163F9200E0902D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				FBE8A7BF22E576AD00CD6625 /* DelegateViewController.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		FB55ED0F2304014700D4E9B6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,7 +213,7 @@
 			children = (
 				FBE8A7AD22E302DE00CD6625 /* AppDelegate.swift */,
 				FBE8A7AF22E302DE00CD6625 /* ViewController.swift */,
-				FBE8A7BF22E576AD00CD6625 /* DelegateViewController.swift */,
+				FB16956423163F9200E0902D /* Delegate */,
 				FB6343332306418000FDC09D /* DelegateData */,
 				FB967B4F22E8559700609729 /* ExtensionViewController.swift */,
 				FBBBCF3522F14E600035EF74 /* ScrollViewController.swift */,
