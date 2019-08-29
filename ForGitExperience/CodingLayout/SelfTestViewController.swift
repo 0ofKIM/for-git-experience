@@ -49,10 +49,12 @@ class SelfTestViewController: UIViewController {
         paramUpdate.frame = CGRect(x: 120, y: 150, width: 40, height: 30)
         paramUpdate.setOn(true, animated: true) // *
         self.view.addSubview(paramUpdate)
+        paramUpdate.addTarget(self, action: #selector(presentUpdateValue(_:)), for: .touchUpInside)
 
         paramInterval = UIStepper()
         paramInterval.frame = CGRect(x: 120, y: 200, width: 230, height: 30)
         self.view.addSubview(paramInterval)
+        paramInterval.addTarget(self, action: #selector(presentIntervalValue(_:)), for: .touchUpInside)
 
         txtUpdate = UILabel()
         txtUpdate.frame = CGRect(x: 250, y: 150, width: 80, height: 30)
@@ -67,6 +69,27 @@ class SelfTestViewController: UIViewController {
         txtInterval.font = .systemFont(ofSize: 14)
         txtInterval.textColor = .red
         self.view.addSubview(txtInterval)
+
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(submit(_:))) // *
+    }
+
+    @objc func presentUpdateValue(_ sender: UISwitch) {
+        txtUpdate.text = sender.isOn ? "갱신함" : "갱신하지 않음"
+    }
+
+    @objc func presentIntervalValue(_ sender: UIStepper) {
+        txtInterval.text = "\(Int(sender.value))분마다"
+    }
+
+    // *
+    @objc func submit(_ sender: UIBarButtonItem) {
+        let rvc = ReceiveViewController()
+
+//        rvc.lblEmail.text?.append(contentsOf: paramEmail.text!)
+//        rvc.lblUpdate.text?.append(contentsOf: txtUpdate.text!)
+//        rvc.lblInterval.text?.append(contentsOf: txtInterval.text!)
+
+        self.navigationController?.pushViewController(rvc, animated: true)
     }
 
 }

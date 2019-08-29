@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB1695682316689700E0902D /* SelfTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1695672316689700E0902D /* SelfTestViewController.swift */; };
+		FB16956A2317BCE800E0902D /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1695692317BCE800E0902D /* ReceiveViewController.swift */; };
 		FB23B61A22F6E3D30002D946 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB23B61922F6E3D30002D946 /* CollectionViewController.swift */; };
 		FB23B61C22F6E5B30002D946 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB23B61B22F6E5B30002D946 /* TestCollectionViewCell.swift */; };
 		FB55ED0A2303F5AA00D4E9B6 /* TapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55ED092303F5AA00D4E9B6 /* TapBarViewController.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		FB1695672316689700E0902D /* SelfTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfTestViewController.swift; sourceTree = "<group>"; };
+		FB1695692317BCE800E0902D /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
 		FB23B61922F6E3D30002D946 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FB23B61B22F6E5B30002D946 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
 		FB55ED092303F5AA00D4E9B6 /* TapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				FB8EFF092302BC9600DCD101 /* CodingLayoutViewController.swift */,
 				FB8EFF0B2302BCB400DCD101 /* ReadViewController.swift */,
 				FB1695672316689700E0902D /* SelfTestViewController.swift */,
+				FB1695692317BCE800E0902D /* ReceiveViewController.swift */,
 				FB6343322306414200FDC09D /* TapBarController */,
 				FB6343352306809400FDC09D /* NavigationBarController */,
 				FBFC4AD3230A35240052D5D8 /* AlertController */,
@@ -344,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB23B61C22F6E5B30002D946 /* TestCollectionViewCell.swift in Sources */,
+				FB16956A2317BCE800E0902D /* ReceiveViewController.swift in Sources */,
 				FB55ED0E2303F8EE00D4E9B6 /* ThirdTapBarViewController.swift in Sources */,
 				FB55ED0A2303F5AA00D4E9B6 /* TapBarViewController.swift in Sources */,
 				FB23B61A22F6E3D30002D946 /* CollectionViewController.swift in Sources */,
