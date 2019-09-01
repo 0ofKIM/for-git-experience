@@ -88,6 +88,9 @@ class SelfTestViewController: UIViewController {
 //        rvc.lblEmail.text?.append(contentsOf: paramEmail.text!)
 //        rvc.lblUpdate.text?.append(contentsOf: txtUpdate.text!)
 //        rvc.lblInterval.text?.append(contentsOf: txtInterval.text!)
+        rvc.email = paramEmail.text
+        rvc.update = txtUpdate.text
+        rvc.interval = txtInterval.text
 
         self.navigationController?.pushViewController(rvc, animated: true)
     }
