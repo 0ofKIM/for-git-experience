@@ -11,6 +11,7 @@
 		FB16956A2317BCE800E0902D /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1695692317BCE800E0902D /* ReceiveViewController.swift */; };
 		FB23B61A22F6E3D30002D946 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB23B61922F6E3D30002D946 /* CollectionViewController.swift */; };
 		FB23B61C22F6E5B30002D946 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB23B61B22F6E5B30002D946 /* TestCollectionViewCell.swift */; };
+		FB2D5BCD232232880003B80F /* SecondSelfTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D5BCC232232880003B80F /* SecondSelfTestViewController.swift */; };
 		FB55ED0A2303F5AA00D4E9B6 /* TapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55ED092303F5AA00D4E9B6 /* TapBarViewController.swift */; };
 		FB55ED0C2303F8E400D4E9B6 /* SecondTapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55ED0B2303F8E400D4E9B6 /* SecondTapBarViewController.swift */; };
 		FB55ED0E2303F8EE00D4E9B6 /* ThirdTapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55ED0D2303F8EE00D4E9B6 /* ThirdTapBarViewController.swift */; };
@@ -62,6 +63,7 @@
 		FB1695692317BCE800E0902D /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
 		FB23B61922F6E3D30002D946 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FB23B61B22F6E5B30002D946 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB2D5BCC232232880003B80F /* SecondSelfTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSelfTestViewController.swift; sourceTree = "<group>"; };
 		FB55ED092303F5AA00D4E9B6 /* TapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarViewController.swift; sourceTree = "<group>"; };
 		FB55ED0B2303F8E400D4E9B6 /* SecondTapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTapBarViewController.swift; sourceTree = "<group>"; };
 		FB55ED0D2303F8EE00D4E9B6 /* ThirdTapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTapBarViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				FB8EFF092302BC9600DCD101 /* CodingLayoutViewController.swift */,
 				FB8EFF0B2302BCB400DCD101 /* ReadViewController.swift */,
 				FB1695672316689700E0902D /* SelfTestViewController.swift */,
+				FB2D5BCC232232880003B80F /* SecondSelfTestViewController.swift */,
 				FB1695692317BCE800E0902D /* ReceiveViewController.swift */,
 				FB6343322306414200FDC09D /* TapBarController */,
 				FB6343352306809400FDC09D /* NavigationBarController */,
@@ -372,6 +375,7 @@
 				FBF8F34A22F2B69400B50121 /* PanGestureViewController.swift in Sources */,
 				FBFC4AE3230BBCFE0052D5D8 /* CustomViewController.swift in Sources */,
 				FB8EFF0C2302BCB400DCD101 /* ReadViewController.swift in Sources */,
+				FB2D5BCD232232880003B80F /* SecondSelfTestViewController.swift in Sources */,
 				FBE8A7C022E576AD00CD6625 /* DelegateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
