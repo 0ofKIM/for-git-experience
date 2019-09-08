@@ -131,4 +131,5 @@ class MapAlertViewController: UIViewController {
     func didSelectRowAt(indexPath: IndexPath) {
         print(">>> 선택된 행은 \(indexPath.row)입니다.")
     }
+    
 }

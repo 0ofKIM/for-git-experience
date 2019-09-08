@@ -41,4 +41,5 @@ class TapBarViewController: UIViewController {
             tabBar?.alpha = ( tabBar?.alpha == 0 ? 1 : 0)
         }
     }
+    
 }

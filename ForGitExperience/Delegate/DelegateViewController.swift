@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DelegateViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class DelegateViewController: UIViewController, UITextFieldDelegate {
 
     var Array = ["red","green","blue"]
     
@@ -16,7 +16,7 @@ class DelegateViewController: UIViewController, UITextFieldDelegate, UIPickerVie
     @IBOutlet var textField: UITextField!
     @IBOutlet var picker: UIPickerView!
     
-//    delegate를 씀으로써 필요 없어짐
+    //delegate를 씀으로써 필요 없어짐
     @IBAction func buttonClicked(_ sender: Any) {
         let alert = UIAlertController(title: "alert", message: "button 말고 return key를 누르세요 ~", preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .destructive, handler: nil)
@@ -31,19 +31,6 @@ class DelegateViewController: UIViewController, UITextFieldDelegate, UIPickerVie
         
         return true
     }
-    
-    // 피커뷰
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return Array.count
-    }
-
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return Array[row]
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,4 +40,20 @@ class DelegateViewController: UIViewController, UITextFieldDelegate, UIPickerVie
         picker.dataSource = self
     }
     
+}
+
+extension DelegateViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return Array.count
+    }
+
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return Array[row]
+    }
+
 }

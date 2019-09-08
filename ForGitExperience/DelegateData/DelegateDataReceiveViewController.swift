@@ -33,4 +33,5 @@ extension DelegateDataReceiveViewController: SendDataDelegate {
     func sendData(data: String) {
         myLabel.text = data
     }
+    
 }
