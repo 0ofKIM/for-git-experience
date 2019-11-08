@@ -8,10 +8,19 @@
 
 import UIKit
 
-class ScrollViewController: UIViewController {
+class ScrollViewController: UIViewController, UIScrollViewDelegate {
+
+    @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet var cityImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        scrollView.delegate = self
+    }
+
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return self.cityImageView
     }
     
 }
