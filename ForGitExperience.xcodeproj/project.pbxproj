@@ -13,6 +13,7 @@
 		FB23B61C22F6E5B30002D946 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB23B61B22F6E5B30002D946 /* TestCollectionViewCell.swift */; };
 		FB2D5BCD232232880003B80F /* SecondSelfTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D5BCC232232880003B80F /* SecondSelfTestViewController.swift */; };
 		FB5073A623753E7100276802 /* PinchZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5073A523753E7100276802 /* PinchZoomViewController.swift */; };
+		FB5073CA237AAC7900276802 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5073C9237AAC7900276802 /* VideoViewController.swift */; };
 		FB55ED0A2303F5AA00D4E9B6 /* TapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55ED092303F5AA00D4E9B6 /* TapBarViewController.swift */; };
 		FB55ED0C2303F8E400D4E9B6 /* SecondTapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55ED0B2303F8E400D4E9B6 /* SecondTapBarViewController.swift */; };
 		FB55ED0E2303F8EE00D4E9B6 /* ThirdTapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55ED0D2303F8EE00D4E9B6 /* ThirdTapBarViewController.swift */; };
@@ -66,6 +67,7 @@
 		FB23B61B22F6E5B30002D946 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
 		FB2D5BCC232232880003B80F /* SecondSelfTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSelfTestViewController.swift; sourceTree = "<group>"; };
 		FB5073A523753E7100276802 /* PinchZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoomViewController.swift; sourceTree = "<group>"; };
+		FB5073C9237AAC7900276802 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		FB55ED092303F5AA00D4E9B6 /* TapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarViewController.swift; sourceTree = "<group>"; };
 		FB55ED0B2303F8E400D4E9B6 /* SecondTapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTapBarViewController.swift; sourceTree = "<group>"; };
 		FB55ED0D2303F8EE00D4E9B6 /* ThirdTapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTapBarViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				FB23B61B22F6E5B30002D946 /* TestCollectionViewCell.swift */,
 				FB634334230641DA00FDC09D /* CodingLayout */,
 				FB5073A523753E7100276802 /* PinchZoomViewController.swift */,
+				FB5073C9237AAC7900276802 /* VideoViewController.swift */,
 				FBE8A7B122E302DE00CD6625 /* Main.storyboard */,
 				FBE8A7B422E302DF00CD6625 /* Assets.xcassets */,
 				FBE8A7B622E302DF00CD6625 /* LaunchScreen.storyboard */,
@@ -360,6 +363,7 @@
 				FB8EFF0A2302BC9600DCD101 /* CodingLayoutViewController.swift in Sources */,
 				FB55ED0C2303F8E400D4E9B6 /* SecondTapBarViewController.swift in Sources */,
 				FBFC4AD5230A3B040052D5D8 /* MapKitViewController.swift in Sources */,
+				FB5073CA237AAC7900276802 /* VideoViewController.swift in Sources */,
 				FB6343372306821D00FDC09D /* NavigationBarViewController.swift in Sources */,
 				FBE8A7B022E302DE00CD6625 /* ViewController.swift in Sources */,
 				FB967B4E22E849B200609729 /* DelegateDataSendViewController.swift in Sources */,
