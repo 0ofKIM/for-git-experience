@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="rqZ-so-vbG" customClass="SecondSelfTestViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ANU-OJ-mpo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wB5-6C-GIr">
@@ -51,7 +51,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKY-kB-D2y">
@@ -198,7 +198,7 @@
             <objects>
                 <viewController id="rh6-Lf-Ltl" customClass="PinchZoomViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iUO-ss-cM8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="Rvo-em-QeI">
@@ -224,18 +224,27 @@
             <objects>
                 <viewController id="Kn1-J4-tVg" customClass="VideoViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZGg-e4-aqd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PA5-mq-xdx">
-                                <rect key="frame" x="20" y="20" width="374" height="324"/>
+                                <rect key="frame" x="20" y="20" width="335" height="240"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHK-Gc-4ey">
-                                <rect key="frame" x="250" y="406" width="69" height="30"/>
+                                <rect key="frame" x="211" y="322" width="69" height="30"/>
                                 <state key="normal" title="동영상 중지"/>
+                                <connections>
+                                    <action selector="playEndButton:" destination="Kn1-J4-tVg" eventType="touchUpInside" id="eeo-M8-NAq"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yM-ax-Mpe">
+                                <rect key="frame" x="155" y="417" width="65" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEG-yv-6yd">
-                                <rect key="frame" x="100" y="406" width="69" height="30"/>
+                                <rect key="frame" x="100" y="322" width="69" height="30"/>
                                 <state key="normal" title="동영상 재생"/>
                                 <connections>
                                     <action selector="playStartButton:" destination="Kn1-J4-tVg" eventType="touchUpInside" id="thL-tG-WZk"/>
@@ -244,10 +253,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="FHK-Gc-4ey" firstAttribute="leading" secondItem="FEG-yv-6yd" secondAttribute="trailing" constant="81" id="34j-zd-CBr"/>
+                            <constraint firstItem="3yM-ax-Mpe" firstAttribute="top" secondItem="FEG-yv-6yd" secondAttribute="bottom" constant="65" id="8Y1-FV-EfW"/>
                             <constraint firstItem="FHK-Gc-4ey" firstAttribute="top" secondItem="PA5-mq-xdx" secondAttribute="bottom" constant="62" id="8h8-UJ-ug2"/>
+                            <constraint firstItem="G7v-fa-z6F" firstAttribute="bottom" secondItem="3yM-ax-Mpe" secondAttribute="bottom" constant="242" id="CNc-TM-Ylj"/>
                             <constraint firstItem="G7v-fa-z6F" firstAttribute="trailing" secondItem="PA5-mq-xdx" secondAttribute="trailing" constant="20" id="GOe-24-x9g"/>
                             <constraint firstItem="FEG-yv-6yd" firstAttribute="leading" secondItem="G7v-fa-z6F" secondAttribute="leading" constant="100" id="MuY-xy-jle"/>
+                            <constraint firstItem="3yM-ax-Mpe" firstAttribute="leading" secondItem="G7v-fa-z6F" secondAttribute="leading" constant="155" id="and-Mj-Xqt"/>
+                            <constraint firstItem="G7v-fa-z6F" firstAttribute="trailing" secondItem="3yM-ax-Mpe" secondAttribute="trailing" constant="155" id="djP-n5-9dD"/>
                             <constraint firstItem="G7v-fa-z6F" firstAttribute="bottom" secondItem="FEG-yv-6yd" secondAttribute="bottom" constant="372" id="dwr-jk-M5p"/>
                             <constraint firstItem="PA5-mq-xdx" firstAttribute="leading" secondItem="G7v-fa-z6F" secondAttribute="leading" constant="20" id="eW5-1V-6lG"/>
                             <constraint firstItem="G7v-fa-z6F" firstAttribute="bottom" secondItem="FHK-Gc-4ey" secondAttribute="bottom" constant="372" id="gCI-3q-l5G"/>
@@ -260,6 +272,7 @@
                     <connections>
                         <outlet property="playButton" destination="FEG-yv-6yd" id="yJR-8E-eX4"/>
                         <outlet property="puaseButton" destination="FHK-Gc-4ey" id="Xbg-6O-Bg5"/>
+                        <outlet property="timeLabel" destination="3yM-ax-Mpe" id="Ntq-b5-1Z2"/>
                         <outlet property="videoView" destination="PA5-mq-xdx" id="Ncy-h6-5Ls"/>
                     </connections>
                 </viewController>
@@ -272,7 +285,7 @@
             <objects>
                 <viewController id="Gw7-51-Wsi" customClass="CustomViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fxv-Ra-7eU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkA-G4-TAj" customClass="CSButton" customModule="ForGitExperience" customModuleProvider="target">
@@ -294,7 +307,7 @@
             <objects>
                 <viewController id="XMp-gM-TEo" customClass="NavigationBarViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YSl-cZ-HAV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zI7-hf-0BT"/>
@@ -310,7 +323,7 @@
             <objects>
                 <viewController id="P0A-3I-lhA" customClass="TapBarViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4b5-GJ-36J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cqW-iG-naM"/>
@@ -326,7 +339,7 @@
             <objects>
                 <viewController id="dre-dR-oBl" customClass="SecondTapBarViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OQe-AY-Ixz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cRt-ay-Dry"/>
@@ -342,7 +355,7 @@
             <objects>
                 <viewController id="dIv-rm-d9U" customClass="ThirdTapBarViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MBZ-dX-8ix">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GRO-qc-fQn"/>
@@ -358,7 +371,7 @@
             <objects>
                 <viewController id="PfJ-6t-csV" customClass="CodingLayoutViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HLD-IV-Hwq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yS8-e8-bkn"/>
@@ -374,7 +387,7 @@
             <objects>
                 <viewController id="LkS-Nr-1Bx" customClass="SelfTestViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7qf-mK-PDt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="q8o-IG-9bG"/>
@@ -390,7 +403,7 @@
             <objects>
                 <viewController id="e14-fp-xXR" customClass="PanGestureViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zAd-Iz-XfD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="Tpa-Nf-5j7">
@@ -431,7 +444,7 @@
             <objects>
                 <viewController id="D8u-SW-C81" customClass="CollectionViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JFV-Jh-IOe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DgR-nT-mJB">
@@ -453,7 +466,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eF7-tN-WkZ">
-                                                    <rect key="frame" x="165" y="39" width="42" height="20.5"/>
+                                                    <rect key="frame" x="165" y="38.666666666666664" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -491,7 +504,7 @@
             <objects>
                 <viewController id="LqS-cZ-H45" customClass="ScrollViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yEw-2r-aTN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" maximumZoomScale="2" translatesAutoresizingMaskIntoConstraints="NO" id="9BV-hI-gpA">
@@ -536,7 +549,7 @@
             <objects>
                 <viewController id="jym-hv-SEB" customClass="ExtensionViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GPv-0g-mD3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ky3-YH-ag6"/>
@@ -551,7 +564,7 @@
             <objects>
                 <viewController id="sbi-Ae-1Bw" customClass="DelegateViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2jV-Rz-ZOX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5e5-c3-UcX">
@@ -583,7 +596,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9XF-rC-7uM">
-                                <rect key="frame" x="0.0" y="300" width="414" height="216"/>
+                                <rect key="frame" x="0.0" y="300" width="375" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                         </subviews>
@@ -605,7 +618,7 @@
             <objects>
                 <viewController id="dUv-Fq-jEC" customClass="DelegateDataReceiveViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OLL-qR-wan">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nes-Hb-qvn">
@@ -639,7 +652,7 @@
             <objects>
                 <viewController id="2zy-lb-a3d" customClass="DelegateDataSendViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hzE-mo-jsK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ktx-ig-M9m">
@@ -674,7 +687,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tRD-PX-Qur" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rot-Y2-FeS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -692,7 +705,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KhC-fd-Ekr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l4q-Bb-zpc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -730,7 +743,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4kA-KI-i8n" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gII-2a-oHx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -747,7 +760,7 @@
             <objects>
                 <viewController id="yUU-KC-Boh" customClass="MapAlertViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N9a-yF-TvH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5Zi-2v-Bqc"/>
@@ -762,7 +775,7 @@
             <objects>
                 <viewController id="5ad-ry-HQW" customClass="AlertViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kmQ-Lc-NhQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="V4T-xr-IF3"/>
@@ -778,7 +791,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JFt-1f-n9z" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IjH-tZ-Fjn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

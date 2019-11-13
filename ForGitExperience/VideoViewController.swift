@@ -14,15 +14,15 @@ class VideoViewController: UIViewController, AVPlayerViewControllerDelegate {
     @IBOutlet var videoView: UIView!
     @IBOutlet var playButton: UIButton!
     @IBOutlet var puaseButton: UIButton!
+    @IBOutlet var timeLabel: UILabel!
 
     let avUrl = URL(string: "https://clips.vorwaerts-gmbh.de/VfE_html5.mp4")
     var avPlayer: AVPlayer?
     var avPlayerLayer: AVPlayerLayer!
     var avController = AVPlayerViewController()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    var mTimer: Timer?
+    var number: Int = 0
 
     @IBAction func playStartButton(_ sender: Any) {
 
@@ -38,6 +38,40 @@ class VideoViewController: UIViewController, AVPlayerViewControllerDelegate {
         avPlayerLayer.frame = videoView.layer.bounds
         videoView.layer.addSublayer(avPlayerLayer)
         avPlayer?.play()
+
+        if let timer = mTimer {
+            //timer 객체가 nil이 아닌 경우에는 invalid 상태에만 시작한다
+            if !timer.isValid {
+                mTimer = Timer.scheduledTimer(timeInterval: 1,
+                                              target: self,
+                                              selector: #selector(timerCallback),
+                                              userInfo: nil,
+                                              repeats: true)
+            }
+        } else {
+            mTimer = Timer.scheduledTimer(timeInterval: 1,
+                                          target: self,
+                                          selector: #selector(timerCallback),
+                                          userInfo: nil,
+                                          repeats: true)
+        }
     }
+    @IBAction func playEndButton(_ sender: Any) {
+        number = 0
+        timeLabel.text = "\(number)"
+        mTimer?.invalidate()
+    }
+
+    @objc func timerCallback() {
+        number += 1
+        timeLabel.text = "\(number)"
+        print("S2S2 \(number) S2S2")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+
 
 }
