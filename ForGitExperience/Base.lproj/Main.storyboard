@@ -226,13 +226,46 @@
                     <view key="view" contentMode="scaleToFill" id="ZGg-e4-aqd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PA5-mq-xdx">
+                                <rect key="frame" x="20" y="20" width="374" height="324"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHK-Gc-4ey">
+                                <rect key="frame" x="250" y="406" width="69" height="30"/>
+                                <state key="normal" title="동영상 중지"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEG-yv-6yd">
+                                <rect key="frame" x="100" y="406" width="69" height="30"/>
+                                <state key="normal" title="동영상 재생"/>
+                                <connections>
+                                    <action selector="playStartButton:" destination="Kn1-J4-tVg" eventType="touchUpInside" id="thL-tG-WZk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FHK-Gc-4ey" firstAttribute="leading" secondItem="FEG-yv-6yd" secondAttribute="trailing" constant="81" id="34j-zd-CBr"/>
+                            <constraint firstItem="FHK-Gc-4ey" firstAttribute="top" secondItem="PA5-mq-xdx" secondAttribute="bottom" constant="62" id="8h8-UJ-ug2"/>
+                            <constraint firstItem="G7v-fa-z6F" firstAttribute="trailing" secondItem="PA5-mq-xdx" secondAttribute="trailing" constant="20" id="GOe-24-x9g"/>
+                            <constraint firstItem="FEG-yv-6yd" firstAttribute="leading" secondItem="G7v-fa-z6F" secondAttribute="leading" constant="100" id="MuY-xy-jle"/>
+                            <constraint firstItem="G7v-fa-z6F" firstAttribute="bottom" secondItem="FEG-yv-6yd" secondAttribute="bottom" constant="372" id="dwr-jk-M5p"/>
+                            <constraint firstItem="PA5-mq-xdx" firstAttribute="leading" secondItem="G7v-fa-z6F" secondAttribute="leading" constant="20" id="eW5-1V-6lG"/>
+                            <constraint firstItem="G7v-fa-z6F" firstAttribute="bottom" secondItem="FHK-Gc-4ey" secondAttribute="bottom" constant="372" id="gCI-3q-l5G"/>
+                            <constraint firstItem="FEG-yv-6yd" firstAttribute="top" secondItem="PA5-mq-xdx" secondAttribute="bottom" constant="62" id="gsY-ha-3vH"/>
+                            <constraint firstItem="PA5-mq-xdx" firstAttribute="top" secondItem="G7v-fa-z6F" secondAttribute="top" constant="20" id="m0u-ms-5v4"/>
+                            <constraint firstItem="G7v-fa-z6F" firstAttribute="trailing" secondItem="FHK-Gc-4ey" secondAttribute="trailing" constant="95" id="p8I-Rk-ng7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="G7v-fa-z6F"/>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="FEG-yv-6yd" id="yJR-8E-eX4"/>
+                        <outlet property="puaseButton" destination="FHK-Gc-4ey" id="Xbg-6O-Bg5"/>
+                        <outlet property="videoView" destination="PA5-mq-xdx" id="Ncy-h6-5Ls"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88t-mM-8Le" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2746" y="5950"/>
+            <point key="canvasLocation" x="-2746.376811594203" y="5949.7767857142853"/>
         </scene>
         <!--Custom View Controller-->
         <scene sceneID="Mea-dK-fu6">
