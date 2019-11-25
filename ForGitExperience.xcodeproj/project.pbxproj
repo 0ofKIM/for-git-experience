@@ -41,6 +41,7 @@
 		FB967B4E22E849B200609729 /* DelegateDataSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB967B4D22E849B200609729 /* DelegateDataSendViewController.swift */; };
 		FB967B5022E8559700609729 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB967B4F22E8559700609729 /* ExtensionViewController.swift */; };
 		FBBBCF3622F14E600035EF74 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBCF3522F14E600035EF74 /* ScrollViewController.swift */; };
+		FBCB6F05238BC39700446123 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB6F04238BC39700446123 /* ProductDetailViewController.swift */; };
 		FBCC720422E7075F0038AA54 /* DelegateDataReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC720322E7075F0038AA54 /* DelegateDataReceiveViewController.swift */; };
 		FBE8A7AE22E302DE00CD6625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE8A7AD22E302DE00CD6625 /* AppDelegate.swift */; };
 		FBE8A7B022E302DE00CD6625 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE8A7AF22E302DE00CD6625 /* ViewController.swift */; };
@@ -96,6 +97,7 @@
 		FB967B4D22E849B200609729 /* DelegateDataSendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateDataSendViewController.swift; sourceTree = "<group>"; };
 		FB967B4F22E8559700609729 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		FBBBCF3522F14E600035EF74 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		FBCB6F04238BC39700446123 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		FBCC720322E7075F0038AA54 /* DelegateDataReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateDataReceiveViewController.swift; sourceTree = "<group>"; };
 		FBE8A7AA22E302DE00CD6625 /* ForGitExperience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForGitExperience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE8A7AD22E302DE00CD6625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				FB634334230641DA00FDC09D /* CodingLayout */,
 				FB5073A523753E7100276802 /* PinchZoomViewController.swift */,
 				FB5073C9237AAC7900276802 /* VideoViewController.swift */,
+				FBCB6F04238BC39700446123 /* ProductDetailViewController.swift */,
 				FBE8A7B122E302DE00CD6625 /* Main.storyboard */,
 				FBE8A7B422E302DF00CD6625 /* Assets.xcassets */,
 				FBE8A7B622E302DF00CD6625 /* LaunchScreen.storyboard */,
@@ -371,6 +374,7 @@
 				FBE8A7B022E302DE00CD6625 /* ViewController.swift in Sources */,
 				FB967B4E22E849B200609729 /* DelegateDataSendViewController.swift in Sources */,
 				FBFC4ADB230AA33A0052D5D8 /* ImageViewController.swift in Sources */,
+				FBCB6F05238BC39700446123 /* ProductDetailViewController.swift in Sources */,
 				FB5073A623753E7100276802 /* PinchZoomViewController.swift in Sources */,
 				FB967B5022E8559700609729 /* ExtensionViewController.swift in Sources */,
 				FBED38C823868F8B005E2BA0 /* TableViewController.swift in Sources */,
