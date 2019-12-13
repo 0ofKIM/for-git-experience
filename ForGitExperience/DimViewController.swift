@@ -11,6 +11,8 @@ import UIKit
 class DimViewController: UIViewController {
 
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var binView: UIView!
+    @IBOutlet var stackView: UIStackView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +23,20 @@ class DimViewController: UIViewController {
 //        let gradientLayer = CAGradientLayer(frame: self.view.frame, colors: colors, startPoint: CGPoint(x: 0, y:0.7), endPoint: CGPoint(x:1, y:0.3))
 //        imageView.image = gradientLayer.createGradientImage()
         imageView.setGradientHorizontal(colorOne: #colorLiteral(red: 0.9358513951, green: 0.1640115976, blue: 0.137254902, alpha: 1), colorTwo: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.3), colorThree: #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1))
+
+        //-------------------------------------------------------------------------
+
+
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.binTapGesture(recognizer:)))
+        self.binView.addGestureRecognizer(tap)
+
+        stackView.addArrangedSubview(binView)
     }
 
+    @objc func binTapGesture(recognizer: UITapGestureRecognizer) {
+        print("되나?")
+    }
+    //-----------------------------------------------------------------------------
 }
 
 extension UIView {

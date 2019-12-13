@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -58,20 +58,39 @@
                                 <rect key="frame" x="16" y="20" width="343" height="318"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="그라데이션 딤처리 해보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h2-G1-g9t">
-                                <rect key="frame" x="61" y="388" width="253" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="그라데이션 딤처리 해보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h2-G1-g9t">
+                                <rect key="frame" x="61" y="457" width="253" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KRM-eV-Ach">
+                                <rect key="frame" x="132" y="511" width="110" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="SRU-z1-jka"/>
+                                    <constraint firstAttribute="width" constant="110" id="cO0-OD-ShT"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVK-Hz-vBi">
+                                <rect key="frame" x="67" y="315" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tkd-kP-tbX" firstAttribute="bottom" secondItem="KRM-eV-Ach" secondAttribute="bottom" constant="13" id="Elr-jE-X9n"/>
+                            <constraint firstItem="tkd-kP-tbX" firstAttribute="trailing" secondItem="KRM-eV-Ach" secondAttribute="trailing" constant="133" id="UcG-vj-inz"/>
+                            <constraint firstItem="KRM-eV-Ach" firstAttribute="leading" secondItem="tkd-kP-tbX" secondAttribute="leading" constant="132" id="lu0-NW-0xp"/>
+                            <constraint firstItem="KRM-eV-Ach" firstAttribute="top" secondItem="8h2-G1-g9t" secondAttribute="bottom" constant="24" id="yAB-ll-Yze"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tkd-kP-tbX"/>
                     </view>
                     <navigationItem key="navigationItem" id="pbg-oY-LNm"/>
                     <connections>
+                        <outlet property="binView" destination="gVK-Hz-vBi" id="PIx-45-UT1"/>
                         <outlet property="imageView" destination="Qia-jg-qLt" id="5Aw-7M-bBE"/>
+                        <outlet property="stackView" destination="KRM-eV-Ach" id="KLz-IW-mos"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kC3-aS-N9C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
