@@ -8,6 +8,32 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Stack View View Controller-->
+        <scene sceneID="fGG-8d-dc5">
+            <objects>
+                <viewController id="PBj-KG-fry" customClass="StackViewViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ak4-x2-Otz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hEE-Q3-KIp">
+                                <rect key="frame" x="20" y="20" width="335" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93585139510000004" green="0.1640115976" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0aG-fS-uk6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tkb-ag-hR5"/>
+                    <connections>
+                        <outlet property="stackView" destination="hEE-Q3-KIp" id="tyr-fh-NJz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wH-fd-b7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5850.3999999999996" y="965.76354679802955"/>
+        </scene>
         <!--Second Self Test View Controller-->
         <scene sceneID="fSJ-oU-qWg">
             <objects>
@@ -54,12 +80,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="Qia-jg-qLt">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="Qia-jg-qLt">
                                 <rect key="frame" x="16" y="20" width="343" height="318"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="318" id="3jI-WQ-0KC"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="그라데이션 딤처리 해보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h2-G1-g9t">
-                                <rect key="frame" x="61" y="457" width="253" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="그라데이션 딤처리 해보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h2-G1-g9t">
+                                <rect key="frame" x="61" y="457" width="252" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,9 +99,8 @@
                                     <constraint firstAttribute="width" constant="110" id="cO0-OD-ShT"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVK-Hz-vBi">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVK-Hz-vBi">
                                 <rect key="frame" x="67" y="315" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -81,8 +108,17 @@
                         <constraints>
                             <constraint firstItem="tkd-kP-tbX" firstAttribute="bottom" secondItem="KRM-eV-Ach" secondAttribute="bottom" constant="13" id="Elr-jE-X9n"/>
                             <constraint firstItem="tkd-kP-tbX" firstAttribute="trailing" secondItem="KRM-eV-Ach" secondAttribute="trailing" constant="133" id="UcG-vj-inz"/>
+                            <constraint firstItem="8h2-G1-g9t" firstAttribute="centerX" secondItem="gVK-Hz-vBi" secondAttribute="centerX" id="Us6-7B-Tdj"/>
+                            <constraint firstItem="Qia-jg-qLt" firstAttribute="top" secondItem="tkd-kP-tbX" secondAttribute="top" constant="20" id="Xvf-Gn-Cw8"/>
+                            <constraint firstItem="8h2-G1-g9t" firstAttribute="centerX" secondItem="Qia-jg-qLt" secondAttribute="centerX" id="g0j-Vg-o9D"/>
+                            <constraint firstItem="8h2-G1-g9t" firstAttribute="top" secondItem="gVK-Hz-vBi" secondAttribute="bottom" constant="14" id="gjl-ii-ALa"/>
+                            <constraint firstItem="8h2-G1-g9t" firstAttribute="leading" secondItem="tkd-kP-tbX" secondAttribute="leading" constant="61" id="hmq-BZ-nxy"/>
+                            <constraint firstItem="gVK-Hz-vBi" firstAttribute="leading" secondItem="tkd-kP-tbX" secondAttribute="leading" constant="67" id="ig8-Xj-dCY"/>
+                            <constraint firstItem="Qia-jg-qLt" firstAttribute="leading" secondItem="x45-y2-8bZ" secondAttribute="leadingMargin" id="lHd-kP-dBI"/>
                             <constraint firstItem="KRM-eV-Ach" firstAttribute="leading" secondItem="tkd-kP-tbX" secondAttribute="leading" constant="132" id="lu0-NW-0xp"/>
+                            <constraint firstItem="gVK-Hz-vBi" firstAttribute="centerY" secondItem="x45-y2-8bZ" secondAttribute="centerY" id="mGI-Vy-cUm"/>
                             <constraint firstItem="KRM-eV-Ach" firstAttribute="top" secondItem="8h2-G1-g9t" secondAttribute="bottom" constant="24" id="yAB-ll-Yze"/>
+                            <constraint firstItem="8h2-G1-g9t" firstAttribute="centerX" secondItem="KRM-eV-Ach" secondAttribute="centerX" id="ziS-u5-EJk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tkd-kP-tbX"/>
                     </view>
@@ -257,6 +293,14 @@
                                 <state key="normal" title="Dim View"/>
                                 <connections>
                                     <segue destination="Zpf-ae-OFn" kind="show" id="9dC-2j-cPq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8p-Vy-Xak">
+                                <rect key="frame" x="20" y="538" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stack View"/>
+                                <connections>
+                                    <segue destination="PBj-KG-fry" kind="show" id="luT-kl-jJc"/>
                                 </connections>
                             </button>
                         </subviews>
