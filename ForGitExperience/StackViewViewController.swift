@@ -25,16 +25,10 @@ class StackViewViewController: UIViewController {
         super.viewDidLoad()
 
         insertLabel(stackView: self.stackView, at: 0)
-        insertLabel(stackView: self.stackView, at: 1)
-        insertLabel(stackView: self.stackView, at: 2)
-        insertLabel(stackView: self.stackView, at: 3)
-        insertLabel(stackView: self.stackView, at: 4)
-
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
-        stackView.heightAnchor.constraint(equalToConstant: CGFloat(50*5)).isActive = true
-        stackView.widthAnchor.constraint(equalToConstant: CGFloat(200)).isActive = true
+//        insertLabel(stackView: self.stackView, at: 1)
+//        insertLabel(stackView: self.stackView, at: 2)
+//        insertLabel(stackView: self.stackView, at: 3)
+//        insertLabel(stackView: self.stackView, at: 4)
     }
 
 }
