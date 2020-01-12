@@ -21,7 +21,7 @@ class LabelTestViewController: UIViewController {
 //        세줄
 //        네줄
 //        """
-        testLabel.text = "welnflwnfljwnfjlwnfjlawnekfjnwekjfnweifbwijfbhiwbfiwbfiwebfuiwbiufbwiufbaiwuebfiuwebfiuwbfiuewbifuwbeiufbwiufbawieufbi왜안올라가지"
+        testLabel.text = "welnflwnfljwnfjlwnfjlawnekfjnwekjfnweifbwijfbhiwbfiwbfiwebfuiwbiufbwiufbaiwuebfiuwebfiuwbfiuewbifuwbeiufbwiufbawieufbi마스터는 심어지지않는건가"
     }
     
 }
