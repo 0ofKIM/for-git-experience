@@ -63,6 +63,38 @@
             </objects>
             <point key="canvasLocation" x="-5850.3999999999996" y="965.76354679802955"/>
         </scene>
+        <!--Label Test View Controller-->
+        <scene sceneID="8hA-qe-c9B">
+            <objects>
+                <viewController id="hTL-UC-pUY" customClass="LabelTestViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZaQ-oQ-Pca">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한줄한줄한줄" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNI-UU-ghS">
+                                <rect key="frame" x="40" y="70" width="90" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8eg-H3-LMN" firstAttribute="trailing" secondItem="DNI-UU-ghS" secondAttribute="trailing" constant="245" id="4vN-tf-mly"/>
+                            <constraint firstItem="DNI-UU-ghS" firstAttribute="leading" secondItem="8eg-H3-LMN" secondAttribute="leading" constant="40" id="MiE-zz-2NQ"/>
+                            <constraint firstItem="DNI-UU-ghS" firstAttribute="top" secondItem="8eg-H3-LMN" secondAttribute="top" constant="70" id="apl-vd-nvJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8eg-H3-LMN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lWk-7w-2Wo"/>
+                    <connections>
+                        <outlet property="testLabel" destination="DNI-UU-ghS" id="rCf-vk-1Gh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbO-3N-66t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4788" y="-562"/>
+        </scene>
         <!--Second Self Test View Controller-->
         <scene sceneID="fSJ-oU-qWg">
             <objects>
@@ -330,6 +362,14 @@
                                 <state key="normal" title="Stack View"/>
                                 <connections>
                                     <segue destination="PBj-KG-fry" kind="show" id="luT-kl-jJc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mt4-dB-qhL">
+                                <rect key="frame" x="20" y="576" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Label"/>
+                                <connections>
+                                    <segue destination="hTL-UC-pUY" kind="show" id="YvJ-Jt-fD7"/>
                                 </connections>
                             </button>
                         </subviews>

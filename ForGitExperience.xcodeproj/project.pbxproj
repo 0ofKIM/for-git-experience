@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52A6737223CB694D00AAC8D5 /* LabelTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6737123CB694D00AAC8D5 /* LabelTestViewController.swift */; };
 		FB1695682316689700E0902D /* SelfTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1695672316689700E0902D /* SelfTestViewController.swift */; };
 		FB16956A2317BCE800E0902D /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1695692317BCE800E0902D /* ReceiveViewController.swift */; };
 		FB23B61A22F6E3D30002D946 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB23B61922F6E3D30002D946 /* CollectionViewController.swift */; };
@@ -65,6 +66,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52A6737123CB694D00AAC8D5 /* LabelTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTestViewController.swift; sourceTree = "<group>"; };
 		FB1695672316689700E0902D /* SelfTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfTestViewController.swift; sourceTree = "<group>"; };
 		FB1695692317BCE800E0902D /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
 		FB23B61922F6E3D30002D946 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				FBCB6F04238BC39700446123 /* ProductDetailViewController.swift */,
 				FB3F9733239E1746003B6ED5 /* DimViewController.swift */,
 				FBB0B6CC23AB035800CB0352 /* StackViewViewController.swift */,
+				52A6737123CB694D00AAC8D5 /* LabelTestViewController.swift */,
 				FBE8A7B122E302DE00CD6625 /* Main.storyboard */,
 				FBE8A7B422E302DF00CD6625 /* Assets.xcassets */,
 				FBE8A7B622E302DF00CD6625 /* LaunchScreen.storyboard */,
@@ -372,6 +375,7 @@
 				FB55ED0E2303F8EE00D4E9B6 /* ThirdTapBarViewController.swift in Sources */,
 				FB55ED0A2303F5AA00D4E9B6 /* TapBarViewController.swift in Sources */,
 				FB23B61A22F6E3D30002D946 /* CollectionViewController.swift in Sources */,
+				52A6737223CB694D00AAC8D5 /* LabelTestViewController.swift in Sources */,
 				FB8EFF0A2302BC9600DCD101 /* CodingLayoutViewController.swift in Sources */,
 				FB55ED0C2303F8E400D4E9B6 /* SecondTapBarViewController.swift in Sources */,
 				FBFC4AD5230A3B040052D5D8 /* MapKitViewController.swift in Sources */,
