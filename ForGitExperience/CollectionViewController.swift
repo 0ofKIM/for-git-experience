@@ -10,8 +10,31 @@ import UIKit
 
 class CollectionViewController: UIViewController {
 
-    var items = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48"]
+    var items = ["1","2","3","4","5"]
     @IBOutlet var collectionView: UICollectionView!
+    
+    @IBOutlet weak var redButton: UIButton!
+    @IBAction func clickRedButton(_ sender: Any) {
+        for i in 0...items.count-1 {
+            items[i] = "red"
+        }
+        collectionView.reloadData()
+    }
+    @IBOutlet weak var orangeButton: UIButton!
+    @IBAction func clickOrangeButton(_ sender: Any) {
+        for i in 0...items.count-1 {
+            items[i] = "orange"
+        }
+        collectionView.reloadData()
+    }
+    @IBOutlet weak var yellowButton: UIButton!
+    @IBAction func clickYellowButton(_ sender: Any) {
+        for i in 0...items.count-1 {
+            items[i] = "yellow"
+        }
+        collectionView.reloadData()
+    }
+    
     let reuseIdentifier = "testCell"
 
     override func viewDidLoad() {
@@ -36,7 +59,7 @@ class CollectionViewController: UIViewController {
         //해당 refresh의 액션에 대한 행위를 정의한 메소드 생성
         //.valueChanged가 일어났을 때 해당 메소드를 실행해라.
         refresh.addTarget(self, action: #selector(updateUI(refresh:)), for: .valueChanged)
-        refresh.attributedTitle = NSAttributedString(string: "새로고침")
+        refresh.attributedTitle = NSAttributedString(string: "Pull To Refresh")
     }
 
     // Refresh에 대한 액션의 메소드(새로고침 함수)
