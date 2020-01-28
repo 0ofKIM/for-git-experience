@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -303,6 +303,11 @@
                                     <segue destination="PBj-KG-fry" kind="show" id="luT-kl-jJc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3y-FY-M7d">
+                                <rect key="frame" x="20" y="576" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Video"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -402,12 +407,6 @@
                                     <action selector="playEndButton:" destination="Kn1-J4-tVg" eventType="touchUpInside" id="eeo-M8-NAq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yM-ax-Mpe">
-                                <rect key="frame" x="155" y="417" width="65" height="65"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEG-yv-6yd">
                                 <rect key="frame" x="100" y="322" width="69" height="30"/>
                                 <state key="normal" title="동영상 재생"/>
@@ -415,6 +414,18 @@
                                     <action selector="playStartButton:" destination="Kn1-J4-tVg" eventType="touchUpInside" id="thL-tG-WZk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNO-dx-ji6">
+                                <rect key="frame" x="237.33333333333334" y="431" width="17.666666666666657" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yM-ax-Mpe">
+                                <rect key="frame" x="125.00000000000001" y="417" width="18.666666666666671" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -423,12 +434,14 @@
                             <constraint firstItem="G7v-fa-z6F" firstAttribute="bottom" secondItem="3yM-ax-Mpe" secondAttribute="bottom" constant="242" id="CNc-TM-Ylj"/>
                             <constraint firstItem="G7v-fa-z6F" firstAttribute="trailing" secondItem="PA5-mq-xdx" secondAttribute="trailing" constant="20" id="GOe-24-x9g"/>
                             <constraint firstItem="FEG-yv-6yd" firstAttribute="leading" secondItem="G7v-fa-z6F" secondAttribute="leading" constant="100" id="MuY-xy-jle"/>
-                            <constraint firstItem="3yM-ax-Mpe" firstAttribute="leading" secondItem="G7v-fa-z6F" secondAttribute="leading" constant="155" id="and-Mj-Xqt"/>
-                            <constraint firstItem="G7v-fa-z6F" firstAttribute="trailing" secondItem="3yM-ax-Mpe" secondAttribute="trailing" constant="155" id="djP-n5-9dD"/>
+                            <constraint firstItem="G7v-fa-z6F" firstAttribute="bottom" secondItem="MNO-dx-ji6" secondAttribute="bottom" constant="257" id="cI6-kE-Hxp"/>
                             <constraint firstItem="G7v-fa-z6F" firstAttribute="bottom" secondItem="FEG-yv-6yd" secondAttribute="bottom" constant="372" id="dwr-jk-M5p"/>
                             <constraint firstItem="PA5-mq-xdx" firstAttribute="leading" secondItem="G7v-fa-z6F" secondAttribute="leading" constant="20" id="eW5-1V-6lG"/>
                             <constraint firstItem="G7v-fa-z6F" firstAttribute="bottom" secondItem="FHK-Gc-4ey" secondAttribute="bottom" constant="372" id="gCI-3q-l5G"/>
+                            <constraint firstItem="3yM-ax-Mpe" firstAttribute="leading" secondItem="G7v-fa-z6F" secondAttribute="leading" constant="125" id="gX7-1y-cVa"/>
                             <constraint firstItem="FEG-yv-6yd" firstAttribute="top" secondItem="PA5-mq-xdx" secondAttribute="bottom" constant="62" id="gsY-ha-3vH"/>
+                            <constraint firstItem="MNO-dx-ji6" firstAttribute="top" secondItem="FHK-Gc-4ey" secondAttribute="bottom" constant="79" id="hOn-rn-Rf2"/>
+                            <constraint firstItem="G7v-fa-z6F" firstAttribute="trailing" secondItem="MNO-dx-ji6" secondAttribute="trailing" constant="120" id="j45-WD-nWm"/>
                             <constraint firstItem="PA5-mq-xdx" firstAttribute="top" secondItem="G7v-fa-z6F" secondAttribute="top" constant="20" id="m0u-ms-5v4"/>
                             <constraint firstItem="G7v-fa-z6F" firstAttribute="trailing" secondItem="FHK-Gc-4ey" secondAttribute="trailing" constant="95" id="p8I-Rk-ng7"/>
                         </constraints>
@@ -438,6 +451,7 @@
                         <outlet property="playButton" destination="FEG-yv-6yd" id="yJR-8E-eX4"/>
                         <outlet property="puaseButton" destination="FHK-Gc-4ey" id="Xbg-6O-Bg5"/>
                         <outlet property="timeLabel" destination="3yM-ax-Mpe" id="Ntq-b5-1Z2"/>
+                        <outlet property="totalTimeLabel" destination="MNO-dx-ji6" id="4PX-in-iVH"/>
                         <outlet property="videoView" destination="PA5-mq-xdx" id="Ncy-h6-5Ls"/>
                     </connections>
                 </viewController>
