@@ -1,0 +1,6 @@
+framework module Pods_ForGitExperience {
+  umbrella header "Pods-ForGitExperience-umbrella.h"
+
+  export *
+  module * { export * }
+}

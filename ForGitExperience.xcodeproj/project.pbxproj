@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FCA51C0E825129740297C99 /* Pods_ForGitExperience.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1314BB6ADCF863A05A417D1B /* Pods_ForGitExperience.framework */; };
 		52A6737223CB694D00AAC8D5 /* LabelTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6737123CB694D00AAC8D5 /* LabelTestViewController.swift */; };
 		FB1695682316689700E0902D /* SelfTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1695672316689700E0902D /* SelfTestViewController.swift */; };
 		FB16956A2317BCE800E0902D /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1695692317BCE800E0902D /* ReceiveViewController.swift */; };
@@ -42,6 +43,7 @@
 		FB8EFF0C2302BCB400DCD101 /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EFF0B2302BCB400DCD101 /* ReadViewController.swift */; };
 		FB967B4E22E849B200609729 /* DelegateDataSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB967B4D22E849B200609729 /* DelegateDataSendViewController.swift */; };
 		FB967B5022E8559700609729 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB967B4F22E8559700609729 /* ExtensionViewController.swift */; };
+		FBA6B38C23EAA39800C67B01 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6B38B23EAA39800C67B01 /* LottieViewController.swift */; };
 		FBB0B6CD23AB035800CB0352 /* StackViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0B6CC23AB035800CB0352 /* StackViewViewController.swift */; };
 		FBBBCF3622F14E600035EF74 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBCF3522F14E600035EF74 /* ScrollViewController.swift */; };
 		FBCB6F05238BC39700446123 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB6F04238BC39700446123 /* ProductDetailViewController.swift */; };
@@ -66,7 +68,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1314BB6ADCF863A05A417D1B /* Pods_ForGitExperience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForGitExperience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A6737123CB694D00AAC8D5 /* LabelTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTestViewController.swift; sourceTree = "<group>"; };
+		7A0522AFBC33E95AA62C28A3 /* Pods-ForGitExperience.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForGitExperience.debug.xcconfig"; path = "Target Support Files/Pods-ForGitExperience/Pods-ForGitExperience.debug.xcconfig"; sourceTree = "<group>"; };
+		7DF9B680D2AC8A18384F3DE7 /* Pods-ForGitExperience.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForGitExperience.release.xcconfig"; path = "Target Support Files/Pods-ForGitExperience/Pods-ForGitExperience.release.xcconfig"; sourceTree = "<group>"; };
 		FB1695672316689700E0902D /* SelfTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfTestViewController.swift; sourceTree = "<group>"; };
 		FB1695692317BCE800E0902D /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
 		FB23B61922F6E3D30002D946 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +106,7 @@
 		FB8EFF0B2302BCB400DCD101 /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		FB967B4D22E849B200609729 /* DelegateDataSendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateDataSendViewController.swift; sourceTree = "<group>"; };
 		FB967B4F22E8559700609729 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		FBA6B38B23EAA39800C67B01 /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
 		FBB0B6CC23AB035800CB0352 /* StackViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewViewController.swift; sourceTree = "<group>"; };
 		FBBBCF3522F14E600035EF74 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		FBCB6F04238BC39700446123 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
@@ -131,12 +137,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCA51C0E825129740297C99 /* Pods_ForGitExperience.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9749AB58FBDDC6340019E173 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1314BB6ADCF863A05A417D1B /* Pods_ForGitExperience.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB16956423163F9200E0902D /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +235,8 @@
 				FB55ED0F2304014700D4E9B6 /* Resource */,
 				FBE8A7AC22E302DE00CD6625 /* ForGitExperience */,
 				FBE8A7AB22E302DE00CD6625 /* Products */,
+				FE37AD97D89F3F35BB0511DC /* Pods */,
+				9749AB58FBDDC6340019E173 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,6 +268,7 @@
 				FB3F9733239E1746003B6ED5 /* DimViewController.swift */,
 				FBB0B6CC23AB035800CB0352 /* StackViewViewController.swift */,
 				52A6737123CB694D00AAC8D5 /* LabelTestViewController.swift */,
+				FBA6B38B23EAA39800C67B01 /* LottieViewController.swift */,
 				FBE8A7B122E302DE00CD6625 /* Main.storyboard */,
 				FBE8A7B422E302DF00CD6625 /* Assets.xcassets */,
 				FBE8A7B622E302DF00CD6625 /* LaunchScreen.storyboard */,
@@ -281,6 +299,15 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
+		FE37AD97D89F3F35BB0511DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A0522AFBC33E95AA62C28A3 /* Pods-ForGitExperience.debug.xcconfig */,
+				7DF9B680D2AC8A18384F3DE7 /* Pods-ForGitExperience.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,9 +315,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBE8A7BC22E302DF00CD6625 /* Build configuration list for PBXNativeTarget "ForGitExperience" */;
 			buildPhases = (
+				948D2386FC02AB1988E72F9B /* [CP] Check Pods Manifest.lock */,
 				FBE8A7A622E302DE00CD6625 /* Sources */,
 				FBE8A7A722E302DE00CD6625 /* Frameworks */,
 				FBE8A7A822E302DE00CD6625 /* Resources */,
+				F34264DCA67F5B7587ADAD29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,6 +394,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		948D2386FC02AB1988E72F9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForGitExperience-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F34264DCA67F5B7587ADAD29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForGitExperience/Pods-ForGitExperience-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForGitExperience/Pods-ForGitExperience-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForGitExperience/Pods-ForGitExperience-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FBE8A7A622E302DE00CD6625 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -383,6 +454,7 @@
 				FB6343372306821D00FDC09D /* NavigationBarViewController.swift in Sources */,
 				FBE8A7B022E302DE00CD6625 /* ViewController.swift in Sources */,
 				FB967B4E22E849B200609729 /* DelegateDataSendViewController.swift in Sources */,
+				FBA6B38C23EAA39800C67B01 /* LottieViewController.swift in Sources */,
 				FBFC4ADB230AA33A0052D5D8 /* ImageViewController.swift in Sources */,
 				FBCB6F05238BC39700446123 /* ProductDetailViewController.swift in Sources */,
 				FBB0B6CD23AB035800CB0352 /* StackViewViewController.swift in Sources */,
@@ -548,6 +620,7 @@
 		};
 		FBE8A7BD22E302DF00CD6625 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A0522AFBC33E95AA62C28A3 /* Pods-ForGitExperience.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -566,6 +639,7 @@
 		};
 		FBE8A7BE22E302DF00CD6625 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF9B680D2AC8A18384F3DE7 /* Pods-ForGitExperience.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
