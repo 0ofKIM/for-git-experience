@@ -68,11 +68,11 @@
             <objects>
                 <viewController id="hTL-UC-pUY" customClass="LabelTestViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZaQ-oQ-Pca">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한줄한줄한줄" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNI-UU-ghS">
-                                <rect key="frame" x="40" y="70" width="90" height="20.333333333333329"/>
+                                <rect key="frame" x="40" y="114" width="90" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -94,6 +94,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbO-3N-66t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4788" y="-562"/>
+        </scene>
+        <!--Lottie View Controller-->
+        <scene sceneID="jyy-oF-Csg">
+            <objects>
+                <viewController id="1AF-rK-BZh" customClass="LottieViewController" customModule="ForGitExperience" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="axJ-CN-4S6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dot-w9-5nd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dot-w9-5nd" firstAttribute="leading" secondItem="Exg-R0-Re6" secondAttribute="leading" id="7vd-PE-XDy"/>
+                            <constraint firstItem="Exg-R0-Re6" firstAttribute="bottom" secondItem="dot-w9-5nd" secondAttribute="bottom" id="A2s-W2-aG0"/>
+                            <constraint firstItem="dot-w9-5nd" firstAttribute="top" secondItem="Exg-R0-Re6" secondAttribute="top" id="f6Z-KQ-9Qa"/>
+                            <constraint firstItem="Exg-R0-Re6" firstAttribute="trailing" secondItem="dot-w9-5nd" secondAttribute="trailing" id="hNT-rt-FsI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Exg-R0-Re6"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="dot-w9-5nd" id="yWQ-V7-BgV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Nc-PU-a9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3847" y="-562"/>
         </scene>
         <!--Second Self Test View Controller-->
         <scene sceneID="fSJ-oU-qWg">
@@ -368,6 +398,14 @@
                                 <rect key="frame" x="20" y="576" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Video"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cox-Wm-kRe">
+                                <rect key="frame" x="20" y="614" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lottie"/>
+                                <connections>
+                                    <segue destination="1AF-rK-BZh" kind="presentation" id="Zcg-qy-EcI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
