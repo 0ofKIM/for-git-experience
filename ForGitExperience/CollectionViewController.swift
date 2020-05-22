@@ -11,8 +11,10 @@ import UIKit
 class CollectionViewController: UIViewController {
 
     var items = ["1","2","3","4","5"]
+    var currentIndex: CGFloat = 0
+
     @IBOutlet var collectionView: UICollectionView!
-    
+
     @IBOutlet weak var redButton: UIButton!
     @IBAction func clickRedButton(_ sender: Any) {
         for i in 0...items.count-1 {
@@ -34,14 +36,16 @@ class CollectionViewController: UIViewController {
         }
         collectionView.reloadData()
     }
-    
+
     let reuseIdentifier = "testCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 //        collectionView.delegate = self  //storyboard에서 직접 연결
 //        collectionView.dataSource = self//storybaord에서 직접 연결
-        initRefresh()
+//        initRefresh()
+        scrollToMiddle(atIndex: 50)
+        collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
     }
 
     // UIRefreshControl 초기 설정
@@ -73,16 +77,51 @@ class CollectionViewController: UIViewController {
 extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.items.count
+//        return self.items.count
+        return 20
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! TestCollectionViewCell
 
-        cell.myLabel.text = self.items[indexPath.item]
+        cell.myLabel.text = self.items[indexPath.row % self.items.count]
         cell.backgroundColor = UIColor.cyan
 
         return cell
     }
 
+    func scrollToMiddle(atIndex: Int, animated: Bool = true) {
+        let middleIndex = atIndex + 200/2
+        collectionView.scrollToItem(at: IndexPath(item: middleIndex, section: 0), at: .centeredHorizontally, animated: animated)
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        if scrollView.contentOffset.x < 0 {
+//            scrollView.contentOffset.x = scrollView.frame.maxX
+//        }
+    }
+
+    //가운데 정렬
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+//        scrollView.contentOffset.x = CGFloat(375+10)
+    }
+
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        let cellWidthIncludingSpacing = layout.itemSize.width + layout.minimumLineSpacing
+
+        var offset = targetContentOffset.pointee
+        let index = offset.x / cellWidthIncludingSpacing
+        var roundedIndex = round(index)
+        roundedIndex = scrollView.contentOffset.x > targetContentOffset.pointee.x ? floor(index) : ceil(index)
+        if roundedIndex > currentIndex + 1 {
+            roundedIndex = currentIndex + 1
+        } else if roundedIndex < currentIndex - 1 {
+            roundedIndex = currentIndex - 1
+        }
+        currentIndex = roundedIndex
+
+        offset = CGPoint(x: roundedIndex * cellWidthIncludingSpacing, y: scrollView.contentInset.top)
+        targetContentOffset.pointee = offset
+    }
 }

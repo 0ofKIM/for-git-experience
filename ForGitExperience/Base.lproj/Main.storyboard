@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -430,10 +430,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="ZGK-6O-gAg">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZGK-6O-gAg" id="Ep7-3z-JhM">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZg-iw-YP4">
@@ -788,24 +788,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DgR-nT-mJB">
-                                <rect key="frame" x="0.0" y="100" width="375" height="624"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OFc-pe-dkl">
-                                    <size key="itemSize" width="372" height="98"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OFc-pe-dkl">
+                                    <size key="itemSize" width="375" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="testCell" id="CJZ-YW-PEh" customClass="TestCollectionViewCell" customModule="ForGitExperience" customModuleProvider="target">
-                                        <rect key="frame" x="1.6666666666666667" y="0.0" width="372" height="98"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="372" height="98"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eF7-tN-WkZ">
-                                                    <rect key="frame" x="165" y="38.666666666666664" width="42" height="21"/>
+                                                    <rect key="frame" x="166.66666666666666" y="39.666666666666664" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -866,7 +866,7 @@
                             <constraint firstItem="Sah-O7-8A9" firstAttribute="top" secondItem="g98-2U-ouC" secondAttribute="top" constant="20" id="Onm-TU-dar"/>
                             <constraint firstItem="DgR-nT-mJB" firstAttribute="top" secondItem="abg-Zi-hQS" secondAttribute="bottom" constant="8" symbolic="YES" id="OpT-fA-EEd"/>
                             <constraint firstItem="g98-2U-ouC" firstAttribute="trailing" secondItem="DgR-nT-mJB" secondAttribute="trailing" id="Rcz-xw-V8z"/>
-                            <constraint firstItem="g98-2U-ouC" firstAttribute="bottom" secondItem="DgR-nT-mJB" secondAttribute="bottom" id="S4R-G0-NfZ"/>
+                            <constraint firstItem="g98-2U-ouC" firstAttribute="bottom" secondItem="DgR-nT-mJB" secondAttribute="bottom" constant="524" id="S4R-G0-NfZ"/>
                             <constraint firstItem="abg-Zi-hQS" firstAttribute="leading" secondItem="g98-2U-ouC" secondAttribute="leading" constant="16" id="Wkp-WE-cnR"/>
                             <constraint firstItem="abg-Zi-hQS" firstAttribute="top" secondItem="g98-2U-ouC" secondAttribute="top" constant="20" id="Zf5-za-HAN"/>
                             <constraint firstItem="DgR-nT-mJB" firstAttribute="top" secondItem="i89-hl-LP4" secondAttribute="bottom" constant="8" symbolic="YES" id="h0F-ny-hNh"/>
