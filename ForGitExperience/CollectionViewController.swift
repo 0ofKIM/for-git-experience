@@ -11,7 +11,7 @@ import UIKit
 class CollectionViewController: UIViewController {
 
     var items = ["1","2","3","4","5"]
-    var currentIndex: CGFloat = 0
+    var currentIndex: CGFloat = 5
 
     @IBOutlet var collectionView: UICollectionView!
 
@@ -44,7 +44,7 @@ class CollectionViewController: UIViewController {
 //        collectionView.delegate = self  //storyboard에서 직접 연결
 //        collectionView.dataSource = self//storybaord에서 직접 연결
 //        initRefresh()
-        scrollToMiddle(atIndex: 50)
+        focusToCenter(atIndex: 0)
         collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
     }
 
@@ -78,7 +78,7 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 //        return self.items.count
-        return 20
+        return 15
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -90,22 +90,19 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
         return cell
     }
 
-    func scrollToMiddle(atIndex: Int, animated: Bool = true) {
-        let middleIndex = atIndex + 200/2
+    func focusToCenter(atIndex: Int, animated: Bool = true) {
+        let middleIndex = 5
         collectionView.scrollToItem(at: IndexPath(item: middleIndex, section: 0), at: .centeredHorizontally, animated: animated)
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        if scrollView.contentOffset.x < 0 {
-//            scrollView.contentOffset.x = scrollView.frame.maxX
-//        }
     }
 
-    //가운데 정렬
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-//        scrollView.contentOffset.x = CGFloat(375+10)
+
     }
 
+    //중앙 정렬
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         let cellWidthIncludingSpacing = layout.itemSize.width + layout.minimumLineSpacing
