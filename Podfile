@@ -6,6 +6,5 @@ target 'ForGitExperience' do
   use_frameworks!
 
   # Pods for ForGitExperience
-  pod 'lottie-ios'
 
 end
